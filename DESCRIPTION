@@ -1,0 +1,21 @@
+Package: shinyvue3r
+Title: Shiny and Vue3
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Harry",
+           family = "Fisher",
+           role = c("aut", "cre"),
+           email = "harryfisher21@gmail.com")
+Description: Template for using Vue 3 and vite with a golem shiny app.
+License: MIT + file LICENSE
+Imports: 
+    config (>= 0.3.1),
+    dplyr,
+    golem (>= 0.3.1.9002),
+    jsonlite,
+    pkgload,
+    shiny (>= 1.7.1),
+    tibble
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2

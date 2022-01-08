@@ -1,0 +1,12 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^data-raw$
+^dev$
+^src$
+^node_modules$
+^package\.json$
+^package-lock\.json$
+^vite\.config\.js$
+^index\.html$
+^.vscode$
+^LICENSE.md$
