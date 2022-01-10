@@ -2,7 +2,8 @@
 ^\.Rproj\.user$
 ^data-raw$
 ^dev$
-^src$
+^srcjs$
+^public$
 ^node_modules$
 ^package\.json$
 ^package-lock\.json$
