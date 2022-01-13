@@ -29,10 +29,19 @@ export default defineConfig({
 
 ```
 
-`R/run_app.R` should have
+`R/app_ui` should have
 
 ```r
-ui = shiny::htmlTemplate(system.file("app/index.html", package = "vite.demo"))
+app_ui <- function(request) {
+    tagList(
+        # Leave this function for adding external resources
+        golem_add_external_resources(),
+        # Your application UI logic
+        shiny::htmlTemplate(
+            system.file("app/index.html", package = "vite.demo")
+        )
+    )
+}
 ```
 
 replace vite.demo with the name of the golem package.

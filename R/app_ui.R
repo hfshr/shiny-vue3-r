@@ -1,3 +1,20 @@
+#' The application User-Interface
+#'
+#' @param request Internal parameter for `{shiny}`.
+#'     DO NOT REMOVE.
+#' @import shiny
+#' @noRd
+app_ui <- function(request) {
+    tagList(
+        # Leave this function for adding external resources
+        golem_add_external_resources(),
+        # Your application UI logic
+        shiny::htmlTemplate(
+            system.file("app/index.html", package = "shinyvue3r")
+        )
+    )
+}
+
 #' Add external Resources to the Application
 #'
 #' This function is internally used to add external
@@ -18,8 +35,4 @@ golem_add_external_resources <- function() {
             app_title = "shinyvue3r"
         )
     )
-}
-
-app_sys <- function(...) {
-    system.file(..., package = "shinyvue3r")
 }

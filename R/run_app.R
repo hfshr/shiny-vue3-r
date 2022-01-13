@@ -12,16 +12,9 @@ run_app <- function(onStart = NULL,
                     enableBookmarking = NULL,
                     uiPattern = "/",
                     ...) {
-    add_resource_path(
-        "www", app_sys("app/www/"),
-        warn_empty = TRUE
-    )
-
     with_golem_options(
         app = shinyApp(
-            ui = shiny::htmlTemplate(
-                system.file("app/index.html", package = "shinyvue3r")
-            ),
+            ui = app_ui,
             server = app_server,
             onStart = onStart,
             options = options,
